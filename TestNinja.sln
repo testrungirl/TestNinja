@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestNinja", "TestNinja.cspr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestNinja.UnitTests", "TestNinja.UnitTests\TestNinja.UnitTests.csproj", "{B4D939D1-CA87-42A2-B5F3-8EFEBD35E487}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestNinja.NUnitTests", "TestNinja.NUnitTests\TestNinja.NUnitTests.csproj", "{6ECD87FA-E126-4AD5-94B9-79CF1E28D8B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B4D939D1-CA87-42A2-B5F3-8EFEBD35E487}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4D939D1-CA87-42A2-B5F3-8EFEBD35E487}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4D939D1-CA87-42A2-B5F3-8EFEBD35E487}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6ECD87FA-E126-4AD5-94B9-79CF1E28D8B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ECD87FA-E126-4AD5-94B9-79CF1E28D8B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ECD87FA-E126-4AD5-94B9-79CF1E28D8B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ECD87FA-E126-4AD5-94B9-79CF1E28D8B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
