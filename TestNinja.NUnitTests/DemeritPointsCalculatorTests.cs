@@ -28,6 +28,7 @@ namespace TestNinja.NUnitTests
         [TestCase(301)]
         public void CalculateDemeritPoints_SpeedIsOutOfReange_ThrowsOutOfRangException(int speed)
         {
+            //Assert.That(() => _calculator.CalculateDemeritPoints(speed), Throws.Exception.TypeOf<ArgumentOutOfRangeException>());
             try
             {
                 var result = _calculator.CalculateDemeritPoints(speed);
