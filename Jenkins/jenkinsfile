@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+    stages {
+        stage("Clean workspace") {
+            steps {
+                cleanWs
+            }
+        }
+        stage("Restore packages") {
+            steps {
+                sh "dotnet restore TestNinja\\TestNinja.sln"
+            }
+        }
+        stage("Build") {
+            steps {
+                sh "dotnet build --configuration Debug"
+            }
+        }
+    }
+}

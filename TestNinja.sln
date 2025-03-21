@@ -5,9 +5,9 @@ VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestNinja", "TestNinja.csproj", "{7328740E-4B78-464F-8352-65D887F2145F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestNinja.UnitTests", "TestNinja.UnitTests\TestNinja.UnitTests.csproj", "{B4D939D1-CA87-42A2-B5F3-8EFEBD35E487}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestNinja.UnitTests", "TestNinja.UnitTests\TestNinja.UnitTests.csproj", "{B4D939D1-CA87-42A2-B5F3-8EFEBD35E487}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestNinja.NUnitTests", "TestNinja.NUnitTests\TestNinja.NUnitTests.csproj", "{6ECD87FA-E126-4AD5-94B9-79CF1E28D8B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestNinja.NUnitTests", "TestNinja.NUnitTests\TestNinja.NUnitTests.csproj", "{6ECD87FA-E126-4AD5-94B9-79CF1E28D8B3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
