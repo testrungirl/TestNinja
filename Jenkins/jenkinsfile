@@ -8,12 +8,12 @@ pipeline {
         }
         stage("Restore packages") {
             steps {
-                sh "dotnet restore TestNinja/TestNinja.sln"
+                sh "dotnet restore TestNinja.sln"
             }
         }
         stage("Build") {
             steps {
-                sh "dotnet build --configuration Debug TestNinja/TestNinja.sln"
+                sh "dotnet build --configuration Debug TestNinja.sln"
             }
         }
     }
