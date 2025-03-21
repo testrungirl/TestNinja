@@ -6,14 +6,9 @@ pipeline {
                 cleanWs()
             }
         }
-        stage("Restore packages") {
+        stage("List Directory") {
             steps {
-                sh "dotnet restore \"${WORKSPACE}/TestNinja.csproj\""
-            }
-        }
-        stage("Build") {
-            steps {
-                sh "dotnet build \"${WORKSPACE}/TestNinja.csproj\""
+                sh 'ls -al'
             }
         }
     }
