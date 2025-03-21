@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.IO;
 using System.Linq;
-using Newtonsoft.Json;
+using System.Text.Json;
 
 namespace TestNinja.Mocking
 {
@@ -12,7 +12,7 @@ namespace TestNinja.Mocking
         public string ReadVideoTitle()
         {
             var str = File.ReadAllText("video.txt");
-            var video = JsonConvert.DeserializeObject<Video>(str);
+            var video = JsonSerializer.Deserialize<Video>(str);
             if (video == null)
                 return "Error parsing the video.";
             return video.Title;
