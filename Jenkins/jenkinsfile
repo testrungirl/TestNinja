@@ -1,10 +1,5 @@
 pipeline {
-    agent {
-        docker {
-            image 'mcr.microsoft.com/dotnet/sdk:6.0'
-            args '-u root:root'
-        }
-    }
+    agent any
     stages {
         stage("Clean workspace") {
             steps {
@@ -13,8 +8,7 @@ pipeline {
         }
         stage("Restore packages") {
             steps {
-                sh "dotnet --version"
-                sh "dotnet restore TestNinja/TestNinja.sln"
+                sh "dotnet restore TestNinja\\TestNinja.sln"
             }
         }
         stage("Build") {
