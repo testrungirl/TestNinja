@@ -1,14 +1,28 @@
 pipeline {
     agent any
     stages {
-        stage("Clean workspace") {
+        stage('Checkout') {
             steps {
-                cleanWs()
+                // Pull the latest code from Git
+                checkout scm
             }
         }
-        stage("List Directory") {
+        stage('Restore Packages') {
             steps {
-                sh 'ls -al'
+                // Restore NuGet packages
+                sh 'dotnet restore TestNinja.sln'
+            }
+        }
+        stage('Build') {
+            steps {
+                // Build the solution in Release mode
+                sh 'dotnet build TestNinja.sln --configuration Release'
+            }
+        }
+        stage('Run Application') {
+            steps {
+                // Run the application
+                sh 'dotnet run --project TestNinja.csproj'
             }
         }
     }
