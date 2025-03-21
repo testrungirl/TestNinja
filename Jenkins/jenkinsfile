@@ -8,12 +8,12 @@ pipeline {
         }
         stage("Restore packages") {
             steps {
-                sh "dotnet restore \"${WORKSPACE}/TestNinja.sln\""
+                sh "dotnet restore \"${WORKSPACE}/TestNinja.csproj\""
             }
         }
         stage("Build") {
             steps {
-                sh "dotnet build --configuration Debug \"${WORKSPACE}/TestNinja.sln\""
+                sh "dotnet build \"${WORKSPACE}/TestNinja.csproj\""
             }
         }
     }
